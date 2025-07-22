@@ -6,18 +6,25 @@
 
 ## 📌 Fases del proyecto
 
-### ✅ FASE 1 — Cifrado Asimétrico (RSA)
-- Implementación manual de funciones clave:
-  - `gcd()`, `modinv()`, `generate_keys()`, `encrypt_message()`, `decrypt_message()`
-- Test unitarios cubriendo todos los casos.
-- Documentación detallada y guía PDF incluida.
+### Fase 1 — Criptografía Asimétrica (RSA básico)
 
-### ✅ FASE 2 — Cifrado Simétrico (Fernet)
-- Cifrado y descifrado de mensajes.
-- Cifrado y descifrado de archivos `.txt`.
+- Implementación manual de funciones clave: `gcd()`, `modinv()`, `generate_keys()`, `encrypt_message()`, `decrypt_message()`.
+- Pruebas unitarias completas.
+- Documentación detallada con guía en PDF incluida.
+
+### Fase 2 — Criptografía Simétrica (Fernet)
+
+- Cifrado y descifrado de mensajes y archivos `.txt`.
 - Uso de claves simétricas generadas de forma segura.
-- Pruebas con demos ejecutables.
+- Demos ejecutables y pruebas.
 
+### Fase 3 — Criptografía con Curvas Elípticas (ECC) y Firma Digital (ECDSA)
+
+- Implementación propia de curvas elípticas y operaciones de grupo.
+- Generación de claves ECC.
+- Firma y verificación digital con ECDSA.
+- Cálculo dinámico del orden del punto generador.
+- Documentación matemática y código con pruebas.
 ---
 
 ## 📂 Estructura del proyecto
@@ -26,22 +33,25 @@
 neurocipher/
 │
 ├── src/
-│   ├── rsa_basic.py
-│   └── symmetric_encrypt.py
+│ ├── rsa_basic.py
+│ ├── symmetric_encrypt.py
+│ └── elliptic_curve.py
 │
 ├── tests/
-│   ├── test_rsa_basic.py
-│   └── test_symmetric_encrypt.py
+│ ├── test_rsa_basic.py
+│ ├── test_symmetric_encrypt.py
+│ └── test_elliptic_curve.py
 │
 ├── demos/
-│   ├── demo_symmetric.py
-│   └── demo_file_encryption.py
+│ ├── demo_symmetric.py
+│ ├── demo_file_encryption.py
+│ └── demo_ecdsa.py
 │
 ├── keys/
-│   └── (archivos de claves si se generan)
+│ └── (archivos de claves si se generan)
 │
 ├── examples/
-│   └── message.txt (ejemplo de texto a cifrar)
+│ └── message.txt
 │
 ├── requirements.txt
 ├── README.md
@@ -82,10 +92,13 @@ make test
 
 ## 🧩 Próximos pasos
 
-- FASE 3: Integración con redes neuronales (Hopfield).
-- FASE 4: Criptografía avanzada y pruebas de robustez.
-- Referencias automatizadas con Semantic Scholar.
-- Exportación de manual técnico en PDF (funciones y teoría).
+-Fase 4: Integración con redes neuronales (Hopfield).
+
+-Fase 5: Criptografía avanzada, gestión segura de claves y pruebas de robustez.
+
+-Automatización de referencias académicas con Semantic Scholar.
+
+-Actualización continua de la guía teórica en PDF.
 
 ---
 
