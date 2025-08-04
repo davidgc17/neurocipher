@@ -60,3 +60,47 @@ def binstr_to_bytes(s: str) -> bytes:
     if len(s) % 8 != 0:
         raise ValueError("La cadena binaria debe tener una longitud múltiplo de 8.")
     return bytes([int(s[i:i+8], 2) for i in range(0, len(s), 8)])
+
+
+from cryptography.hazmat.primitives.serialization import load_pem_private_key
+
+from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives.asymmetric.rsa import RSAPrivateKey
+
+def save_rsa_private_key(private_key: RSAPrivateKey, filepath: str, password: bytes = None) -> None:
+    """
+    Guarda una clave privada RSA en un archivo .pem.
+
+    :param private_key: Clave privada RSA a guardar
+    :param filepath: Ruta de destino del archivo
+    :param password: Contraseña opcional para cifrado (en bytes)
+    """
+    encryption_algorithm = (
+        serialization.BestAvailableEncryption(password)
+        if password else
+        serialization.NoEncryption()
+    )
+
+    pem_data = private_key.private_bytes(
+        encoding=serialization.Encoding.PEM,
+        format=serialization.PrivateFormat.PKCS8,
+        encryption_algorithm=encryption_algorithm
+    )
+
+    with open(filepath, "wb") as f:
+        f.write(pem_data)
+
+
+def load_rsa_private_key(filepath: str, password: bytes = None) -> RSAPrivateKey:
+    """
+    Carga una clave privada RSA desde archivo .pem.
+
+    :param filepath: Ruta al archivo .pem
+    :param password: Contraseña si está cifrada (en bytes)
+    :return: Clave privada RSA (RSAPrivateKey)
+    """
+    with open(filepath, "rb") as f:
+        pem_data = f.read()
+
+    private_key = load_pem_private_key(pem_data, password=password)
+    return private_key
