@@ -35,6 +35,12 @@
 - Resultados almacenados en CSV y graficados con scripts en `graficos/`.
 - Documentación detallada en LaTeX (`guia_hopfield.tex`).
 
+### ✅ Fase 5 — Validación funcional con cifrado real
+- Flujo completo: generación de clave → cifrado → red Hopfield → recuperación → descifrado del mensaje original.
+- Pruebas reales con múltiples mensajes y niveles de ruido.
+- Resultados visualizados mediante gráficos (`graficos/precision_vs_ruido.png`).
+- Script principal: `src/secure_message.py`.
+
 ---
 
 ## 📂 Estructura del proyecto
@@ -47,17 +53,12 @@ neurocipher/
 │ ├── symmetric_encrypt.py
 │ ├── elliptic_curve.py
 │ ├── Hopfield_net.py
-│ └── secure_key_utils.py
+│ ├── secure_key_utils.py
+│ └── secure_message.py
 │
-├── tests/                   # Tests unitarios
-│ ├── test_rsa_basic.py
-│ ├── test_symmetric_encrypt.py
-│ └── test_elliptic_curve.py
+├── tests/                   # Tests unitarios y verificación
 │
 ├── demos/                   # Demos ejecutables
-│ ├── demo_symmetric.py
-│ ├── demo_file_encryption.py
-│ └── demo_ecdsa.py
 │
 ├── graficos/                # Scripts y resultados gráficos
 │
@@ -66,10 +67,12 @@ neurocipher/
 ├── keys/                    # Archivos de claves generadas
 │
 ├── examples/                # Archivos de ejemplo
-│ └── message.txt
+│
+├── docs/                    # Documentación LaTeX y guías
 │
 ├── guia_neurocipher.pdf     # Guía general del proyecto
 ├── guia_hopfield.tex        # Documento LaTeX sobre redes de Hopfield
+├── checklist.docx           # Planificación por fases
 ├── requirements.txt
 └── README.md
 ```
@@ -106,16 +109,61 @@ make test
 
 ---
 
-## 🧩 Próximos pasos
+---
 
-- Fase 5: Criptografía avanzada, recuperación parcial y gestión segura de claves.
-- Implementación final de integración clave-criptograma.
-- Automatización de referencias académicas con Semantic Scholar.
-- Actualización completa de documentación en PDF.
+## 📘 Guía de uso paso a paso
+
+1. Ejecuta el script principal del sistema completo:
+
+-python src/secure_message.py
+
+
+2. Este script realiza de forma automática:
+
+- La generación de una clave AES o RSA.
+- El cifrado de un mensaje de prueba.
+- La conversión binaria de la clave y su almacenamiento en la red de Hopfield.
+- La simulación de ruido en la clave (desde 0 % hasta 60 %).
+- La recuperación de la clave original desde la red Hopfield.
+- El intento de descifrado con la clave recuperada.
+- La evaluación del éxito (¿se recuperó correctamente el mensaje?).
+
+3. Los resultados del experimento se guardan automáticamente en:
+
+- 📁 `logs/`: archivo CSV con precisión, nivel de ruido y éxito de descifrado.
+- 📁 `graficos/`: gráfico generado `precision_vs_ruido.png` para visualizar el rendimiento.
+
+4. Puedes personalizar fácilmente los mensajes modificando las líneas correspondientes dentro de `src/secure_message.py`. Se incluyen varios mensajes de prueba (con símbolos, acentos, texto largo...).
+
+---
+
+## ⚠️ Notas
+
+- Las claves utilizadas son generadas al vuelo y están pensadas únicamente para fines de prueba. No representan datos sensibles ni claves reales.
+- Este sistema tiene carácter experimental y educativo, y **no debe usarse aún en entornos de producción real**.
+- La recuperación exitosa depende del tipo de clave, del nivel de ruido y de la configuración de la red Hopfield (versión 1.3-A en este caso).
+
+
+---
+
+## 📊 Resultados y documentación
+
+- Todos los experimentos realizados con la red de Hopfield se documentan en `logs/` (CSV).
+- Los gráficos generados se encuentran en `graficos/`.
+- Las guías teóricas y matemáticas están en `docs/` y en formato `.tex` y `.pdf`.
+
+---
+
+## 📈 Mejora continua
+
+Este proyecto está en desarrollo activo. Se añadirán nuevas funcionalidades, integraciones y mejoras documentadas próximamente. El objetivo es seguir combinando técnicas criptográficas con redes neuronales para evaluar su aplicabilidad en sistemas reales.
+
+---
+
+
 
 ---
 
 ## 📄 Licencia
 
 Este proyecto se distribuye bajo la **Licencia Apache 2.0**.
-

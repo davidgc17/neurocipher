@@ -1,0 +1,85 @@
+timestamp,mensaje,metodo,ruido,precision,recuperado,exito
+2025-08-05T11:02:03.853713,Mensaje 1: básico,AES,0.0,100.0,True,True
+2025-08-05T11:02:03.899585,Mensaje 1: básico,AES,0.1,100.0,True,True
+2025-08-05T11:02:03.944757,Mensaje 1: básico,AES,0.2,100.0,True,True
+2025-08-05T11:02:03.989695,Mensaje 1: básico,AES,0.3,100.0,True,True
+2025-08-05T11:02:04.034543,Mensaje 1: básico,AES,0.4,100.0,True,True
+2025-08-05T11:02:04.078973,Mensaje 1: básico,AES,0.5,0.0,False,False
+2025-08-05T11:02:04.123529,Mensaje 1: básico,AES,0.6,0.0,False,False
+2025-08-05T11:02:04.168267,Mensaje 2: con acentos áéíóú,AES,0.0,100.0,True,True
+2025-08-05T11:02:04.214623,Mensaje 2: con acentos áéíóú,AES,0.1,100.0,True,True
+2025-08-05T11:02:04.261037,Mensaje 2: con acentos áéíóú,AES,0.2,100.0,True,True
+2025-08-05T11:02:04.311038,Mensaje 2: con acentos áéíóú,AES,0.3,100.0,True,True
+2025-08-05T11:02:04.356296,Mensaje 2: con acentos áéíóú,AES,0.4,100.0,True,True
+2025-08-05T11:02:04.401256,Mensaje 2: con acentos áéíóú,AES,0.5,0.0,False,False
+2025-08-05T11:02:04.446190,Mensaje 2: con acentos áéíóú,AES,0.6,0.0,False,False
+2025-08-05T11:02:04.491027,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",AES,0.0,100.0,True,True
+2025-08-05T11:02:04.536879,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",AES,0.1,100.0,True,True
+2025-08-05T11:02:04.581132,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",AES,0.2,100.0,True,True
+2025-08-05T11:02:04.625162,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",AES,0.3,100.0,True,True
+2025-08-05T11:02:04.669835,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",AES,0.4,100.0,True,True
+2025-08-05T11:02:04.713848,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",AES,0.5,0.0,False,False
+2025-08-05T11:02:04.758307,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",AES,0.6,0.0,False,False
+2025-08-05T11:02:04.802636,Mensaje 4: números 1234567890,AES,0.0,100.0,True,True
+2025-08-05T11:02:04.847839,Mensaje 4: números 1234567890,AES,0.1,100.0,True,True
+2025-08-05T11:02:04.892226,Mensaje 4: números 1234567890,AES,0.2,100.0,True,True
+2025-08-05T11:02:04.937993,Mensaje 4: números 1234567890,AES,0.3,100.0,True,True
+2025-08-05T11:02:04.983183,Mensaje 4: números 1234567890,AES,0.4,100.0,True,True
+2025-08-05T11:02:05.039410,Mensaje 4: números 1234567890,AES,0.5,100.0,True,True
+2025-08-05T11:02:05.083971,Mensaje 4: números 1234567890,AES,0.6,0.0,False,False
+2025-08-05T11:02:05.129327,Mensaje 5: símbolos $%&/()=?¡¿,AES,0.0,100.0,True,True
+2025-08-05T11:02:05.173797,Mensaje 5: símbolos $%&/()=?¡¿,AES,0.1,100.0,True,True
+2025-08-05T11:02:05.219287,Mensaje 5: símbolos $%&/()=?¡¿,AES,0.2,100.0,True,True
+2025-08-05T11:02:05.263790,Mensaje 5: símbolos $%&/()=?¡¿,AES,0.3,100.0,True,True
+2025-08-05T11:02:05.309761,Mensaje 5: símbolos $%&/()=?¡¿,AES,0.4,100.0,True,True
+2025-08-05T11:02:05.355615,Mensaje 5: símbolos $%&/()=?¡¿,AES,0.5,0.0,False,False
+2025-08-05T11:02:05.401358,Mensaje 5: símbolos $%&/()=?¡¿,AES,0.6,0.0,False,False
+2025-08-05T11:02:05.446969,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,AES,0.0,100.0,True,True
+2025-08-05T11:02:05.491975,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,AES,0.1,100.0,True,True
+2025-08-05T11:02:05.536993,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,AES,0.2,100.0,True,True
+2025-08-05T11:02:05.581622,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,AES,0.3,100.0,True,True
+2025-08-05T11:02:05.626826,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,AES,0.4,100.0,True,True
+2025-08-05T11:02:05.672017,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,AES,0.5,0.0,False,False
+2025-08-05T11:02:05.716584,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,AES,0.6,0.0,False,False
+2025-08-05T11:02:05.731182,Mensaje 1: básico,RSA,0.0,100.0,True,True
+2025-08-05T11:02:05.745815,Mensaje 1: básico,RSA,0.1,100.0,True,True
+2025-08-05T11:02:05.760296,Mensaje 1: básico,RSA,0.2,100.0,True,True
+2025-08-05T11:02:05.774718,Mensaje 1: básico,RSA,0.3,100.0,True,True
+2025-08-05T11:02:05.789218,Mensaje 1: básico,RSA,0.4,100.0,True,True
+2025-08-05T11:02:05.803595,Mensaje 1: básico,RSA,0.5,0.0,False,False
+2025-08-05T11:02:05.817958,Mensaje 1: básico,RSA,0.6,0.0,False,False
+2025-08-05T11:02:05.832557,Mensaje 2: con acentos áéíóú,RSA,0.0,100.0,True,True
+2025-08-05T11:02:05.847565,Mensaje 2: con acentos áéíóú,RSA,0.1,100.0,True,True
+2025-08-05T11:02:05.862312,Mensaje 2: con acentos áéíóú,RSA,0.2,100.0,True,True
+2025-08-05T11:02:05.877214,Mensaje 2: con acentos áéíóú,RSA,0.3,100.0,True,True
+2025-08-05T11:02:05.891859,Mensaje 2: con acentos áéíóú,RSA,0.4,100.0,True,True
+2025-08-05T11:02:05.906581,Mensaje 2: con acentos áéíóú,RSA,0.5,0.0,False,False
+2025-08-05T11:02:05.921166,Mensaje 2: con acentos áéíóú,RSA,0.6,0.0,False,False
+2025-08-05T11:02:05.936162,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",RSA,0.0,100.0,True,True
+2025-08-05T11:02:05.951171,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",RSA,0.1,100.0,True,True
+2025-08-05T11:02:05.966690,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",RSA,0.2,100.0,True,True
+2025-08-05T11:02:05.982139,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",RSA,0.3,100.0,True,True
+2025-08-05T11:02:05.997315,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",RSA,0.4,100.0,True,True
+2025-08-05T11:02:06.012140,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",RSA,0.5,0.0,False,False
+2025-08-05T11:02:06.026958,"Mensaje 3: más largo, con puntuación... ¿qué pasa si lo alargamos mucho más aún?",RSA,0.6,0.0,False,False
+2025-08-05T11:02:06.041740,Mensaje 4: números 1234567890,RSA,0.0,100.0,True,True
+2025-08-05T11:02:06.056359,Mensaje 4: números 1234567890,RSA,0.1,100.0,True,True
+2025-08-05T11:02:06.071258,Mensaje 4: números 1234567890,RSA,0.2,100.0,True,True
+2025-08-05T11:02:06.085918,Mensaje 4: números 1234567890,RSA,0.3,100.0,True,True
+2025-08-05T11:02:06.100592,Mensaje 4: números 1234567890,RSA,0.4,100.0,True,True
+2025-08-05T11:02:06.114972,Mensaje 4: números 1234567890,RSA,0.5,0.0,False,False
+2025-08-05T11:02:06.129547,Mensaje 4: números 1234567890,RSA,0.6,0.0,False,False
+2025-08-05T11:02:06.144509,Mensaje 5: símbolos $%&/()=?¡¿,RSA,0.0,100.0,True,True
+2025-08-05T11:02:06.159182,Mensaje 5: símbolos $%&/()=?¡¿,RSA,0.1,100.0,True,True
+2025-08-05T11:02:06.174219,Mensaje 5: símbolos $%&/()=?¡¿,RSA,0.2,100.0,True,True
+2025-08-05T11:02:06.189104,Mensaje 5: símbolos $%&/()=?¡¿,RSA,0.3,100.0,True,True
+2025-08-05T11:02:06.203696,Mensaje 5: símbolos $%&/()=?¡¿,RSA,0.4,100.0,True,True
+2025-08-05T11:02:06.218353,Mensaje 5: símbolos $%&/()=?¡¿,RSA,0.5,100.0,True,True
+2025-08-05T11:02:06.232632,Mensaje 5: símbolos $%&/()=?¡¿,RSA,0.6,0.0,False,False
+2025-08-05T11:02:06.247199,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,RSA,0.0,100.0,True,True
+2025-08-05T11:02:06.262270,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,RSA,0.1,100.0,True,True
+2025-08-05T11:02:06.276932,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,RSA,0.2,100.0,True,True
+2025-08-05T11:02:06.291622,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,RSA,0.3,100.0,True,True
+2025-08-05T11:02:06.306480,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,RSA,0.4,100.0,True,True
+2025-08-05T11:02:06.321359,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,RSA,0.5,100.0,True,True
+2025-08-05T11:02:06.335702,Mensaje 6: prueba final con mezcla ÁÑç<>~#@!,RSA,0.6,0.0,False,False
