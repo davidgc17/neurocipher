@@ -147,7 +147,7 @@ make test
 
 La siguiente gráfica muestra cómo la red de Hopfield (versión 1.3-A) recupera claves incluso con ruido del 40–50 %:
 
-![Precisión vs Nivel de Ruido](graficos/precision_vs_ruido.png)
+![Precisión vs Nivel de Ruido](graficos/precision_vs_ruido_cifrado.png)
 
 Este gráfico se genera automáticamente tras ejecutar el script `secure_message.py`.
 
