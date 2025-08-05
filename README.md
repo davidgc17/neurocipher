@@ -1,5 +1,11 @@
 # 🧠🔐 Neurocipher
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![License](https://img.shields.io/badge/License-Apache_2.0-green)
+![Status](https://img.shields.io/badge/Estado-Estable%20v1.0-success)
+
+
+
 **Neurocipher** es un proyecto de investigación y desarrollo en criptografía aplicada y ciberseguridad, combinando herramientas clásicas como RSA con técnicas modernas como el cifrado simétrico (AES/Fernet), con el objetivo de explorar su integración futura con redes neuronales y sistemas adaptativos.
 
 ---
@@ -134,6 +140,18 @@ make test
 - 📁 `graficos/`: gráfico generado `precision_vs_ruido.png` para visualizar el rendimiento.
 
 4. Puedes personalizar fácilmente los mensajes modificando las líneas correspondientes dentro de `src/secure_message.py`. Se incluyen varios mensajes de prueba (con símbolos, acentos, texto largo...).
+
+---
+
+## 📈 Ejemplo visual del rendimiento
+
+La siguiente gráfica muestra cómo la red de Hopfield (versión 1.3-A) recupera claves incluso con ruido del 40–50 %:
+
+![Precisión vs Nivel de Ruido](graficos/precision_vs_ruido.png)
+
+Este gráfico se genera automáticamente tras ejecutar el script `secure_message.py`.
+
+
 
 ---
 
