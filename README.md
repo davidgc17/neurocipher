@@ -8,6 +8,9 @@
 
 **Neurocipher** es un proyecto de investigación y desarrollo en criptografía aplicada y ciberseguridad, combinando herramientas clásicas como RSA con técnicas modernas como el cifrado simétrico (AES/Fernet), con el objetivo de explorar su integración futura con redes neuronales y sistemas adaptativos.
 
+🇪🇸 Este README está en español.  
+🇬🇧 [English version here](README_EN.md)
+
 ---
 
 ## 📌 Fases del proyecto
