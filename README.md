@@ -35,7 +35,7 @@
 - Resultados almacenados en CSV y graficados con scripts en `graficos/`.
 - Documentación detallada en LaTeX (`guia_hopfield.tex`).
 
-### ✅ Fase 5 — Validación funcional con cifrado real
+### Fase 5 — Validación funcional con cifrado real
 - Flujo completo: generación de clave → cifrado → red Hopfield → recuperación → descifrado del mensaje original.
 - Pruebas reales con múltiples mensajes y niveles de ruido.
 - Resultados visualizados mediante gráficos (`graficos/precision_vs_ruido.png`).
